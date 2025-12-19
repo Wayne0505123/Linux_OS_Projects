@@ -1,4 +1,4 @@
-# Linux_OS_Projects
+# Linux OS Projects
 **Project1:**  
 [Project1 Description](https://hackmd.io/@Yan-Hao-Wang/Hy2YW9jple)  
 [Project1](https://hackmd.io/S01ADCVPQpmNljruzel_og)  
