@@ -1,5 +1,5 @@
 # Linux OS Projects
-### Project1
+### Project 1
 **Linux Virtual Memory Translation System Call**  
 - Implemented a custom Linux system call to translate virtual addresses to physical addresses by traversing kernel page tables.
 - Developed user-space programs in C and Python to analyze lazy page allocation and heap growth behavior.
@@ -9,7 +9,7 @@
 [Project1 Description](https://hackmd.io/@Yan-Hao-Wang/Hy2YW9jple)  
 [Project1](https://hackmd.io/S01ADCVPQpmNljruzel_og)  
 
-### Project2
+### Project 2
 **Linux Kernel Thread Information System Call**  
 - Implemented a custom Linux kernel system call `my_get_thread_kernel_info()` to retrieve kernel-level information of a running thread.
 - Extracted thread-related data from the Linux kernel, including PID, TGID, process descriptor address (`task_struct`), kernel-mode stack address, and PGD table address.
