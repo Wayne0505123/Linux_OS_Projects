@@ -8,4 +8,4 @@
 [Project2](https://hackmd.io/FVMoGPudTxic6vRY3pya0w)
 
 課程網站: https://staff.csie.ncu.edu.tw/hsufh/COURSES/FALL2025/linuxos.html  
-重要參考: [add syscall to kernel in Ubuntu](https://hackmd.io/aist49C9R46-vaBIlP3LDA?view)  
+參考網址: [add syscall to kernel in Ubuntu](https://hackmd.io/aist49C9R46-vaBIlP3LDA?view)  
