@@ -16,9 +16,9 @@ Implemented a custom Linux system call to translate virtual addresses to physica
 
 | | |
 |---|---|
-| Report | [HackMD](https://hackmd.io/S01ADCVPQpmNljruzel_og) |
-| Description | [HackMD](https://hackmd.io/@Yan-Hao-Wang/Hy2YW9jple) |
-| Source | [`project1/`](./project1/) |
+| Report | [Project1 Report](https://hackmd.io/S01ADCVPQpmNljruzel_og) |
+| Description | [Project1_Description](https://hackmd.io/@Yan-Hao-Wang/Hy2YW9jple) |
+| Source | [`project1`](./project1/) |
 
 **Highlights:**
 - Custom system call that walks kernel page tables (PGD → PUD → PMD → PTE)
@@ -35,9 +35,9 @@ Implemented `my_get_thread_kernel_info()`, a custom kernel system call that retr
 
 | | |
 |---|---|
-| Report | [HackMD](https://hackmd.io/FVMoGPudTxic6vRY3pya0w) |
-| Description | [NCU Course Page](https://staff.csie.ncu.edu.tw/hsufh/COURSES/FALL2025/linux_project_2.html) |
-| Source | [`project2/`](./project2/) |
+| Report | [Project2 Report](https://hackmd.io/FVMoGPudTxic6vRY3pya0w) |
+| Description | [Project2 Description](https://staff.csie.ncu.edu.tw/hsufh/COURSES/FALL2025/linux_project_2.html) |
+| Source | [`project2`](./project2/) |
 
 **Highlights:**
 - Retrieves PID, TGID, `task_struct` address, kernel stack address, and PGD address
