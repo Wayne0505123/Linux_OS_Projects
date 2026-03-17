@@ -1,27 +1,75 @@
 # Linux OS Projects
-### Project 1
-**Linux Virtual Memory Translation System Call**  
-- Implemented a custom Linux system call to translate virtual addresses to physical addresses by traversing kernel page tables.
-- Developed user-space programs in C and Python to analyze lazy page allocation and heap growth behavior.
-- Utilized `ctypes` and shared libraries to bridge Python with kernel-level functionality.
-- Gained hands-on experience with Linux kernel development, virtual memory management, and system-level debugging.
- 
-[Project1 Description](https://hackmd.io/@Yan-Hao-Wang/Hy2YW9jple)  
-[Project1](https://hackmd.io/S01ADCVPQpmNljruzel_og)  
 
-#
+> Academic projects for the Linux Operating System course at National Central University (NCU).
+>
+> Course: [Linux OS — Fall 2025](https://staff.csie.ncu.edu.tw/hsufh/COURSES/FALL2025/linuxos.html)
 
-### Project 2
-**Linux Kernel Thread Information System Call**  
-- Implemented a custom Linux kernel system call `my_get_thread_kernel_info()` to retrieve kernel-level information of a running thread.
-- Extracted thread-related data from the Linux kernel, including PID, TGID, process descriptor address (`task_struct`), kernel-mode stack address, and PGD table address.
-- Developed user-space programs to invoke the system call and display thread kernel information.
-- Implemented a multi-threaded test program using POSIX threads (pthreads) to compare kernel information across multiple threads within the same process.
-- Utilized `copy_to_user()` and `copy_from_user()` for safe data transfer between kernel space and user space.
-- Strengthened understanding of Linux kernel internals, system call implementation, thread management, and kernel-user space interaction.
-  
-[Project2 Description](https://staff.csie.ncu.edu.tw/hsufh/COURSES/FALL2025/linux_project_2.html)  
-[Project2](https://hackmd.io/FVMoGPudTxic6vRY3pya0w)
-#
-Course Website: https://staff.csie.ncu.edu.tw/hsufh/COURSES/FALL2025/linuxos.html  
-Reference: [add syscall to kernel in Ubuntu](https://hackmd.io/aist49C9R46-vaBIlP3LDA?view)  
+---
+
+## Projects
+
+### Project 1 — Virtual Memory Translation System Call
+
+Implemented a custom Linux system call to translate virtual addresses to physical addresses by traversing kernel page tables.
+
+**Key Topics:** Kernel development · Virtual memory · Page table traversal · ctypes
+
+| | |
+|---|---|
+| Report | [HackMD](https://hackmd.io/S01ADCVPQpmNljruzel_og) |
+| Description | [HackMD](https://hackmd.io/@Yan-Hao-Wang/Hy2YW9jple) |
+| Source | [`project1/`](./project1/) |
+
+**Highlights:**
+- Custom system call that walks kernel page tables (PGD → PUD → PMD → PTE)
+- User-space C and Python programs to test lazy page allocation and heap growth
+- Python `ctypes` bridge to invoke kernel-level functionality
+
+---
+
+### Project 2 — Kernel Thread Information System Call
+
+Implemented `my_get_thread_kernel_info()`, a custom kernel system call that retrieves thread-level kernel data.
+
+**Key Topics:** Kernel internals · task_struct · pthreads · copy_to_user
+
+| | |
+|---|---|
+| Report | [HackMD](https://hackmd.io/FVMoGPudTxic6vRY3pya0w) |
+| Description | [NCU Course Page](https://staff.csie.ncu.edu.tw/hsufh/COURSES/FALL2025/linux_project_2.html) |
+| Source | [`project2/`](./project2/) |
+
+**Highlights:**
+- Retrieves PID, TGID, `task_struct` address, kernel stack address, and PGD address
+- Multi-threaded test program (pthreads) to compare kernel info across threads
+- Safe kernel/user-space data transfer via `copy_to_user()` / `copy_from_user()`
+
+---
+
+## Environment
+
+| Item | Version |
+|------|---------|
+| OS | Ubuntu 20.04 |
+| Kernel | Linux 5.x |
+| Compiler | GCC |
+| Language | C, Python 3 |
+
+## Repository Structure
+
+```
+Linux_OS_Projects/
+├── project1/                    # Virtual Memory Translation
+│   ├── kernel/                  # Kernel-side system call implementation
+│   ├── userspace/               # User-space test programs (C & Python)
+│   └── README.md
+├── project2/                    # Kernel Thread Information
+│   ├── kernel/                  # Kernel-side system call implementation
+│   ├── userspace/               # User-space test programs
+│   └── README.md
+└── README.md
+```
+
+## Reference
+
+- [How to add a system call to the Linux kernel (Ubuntu)](https://hackmd.io/aist49C9R46-vaBIlP3LDA?view)
